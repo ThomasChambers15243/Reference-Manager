@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What's new · Reference Manager</title>
+<meta name="description" content="What changed in each version of Reference Manager.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="home" href="./"><img src="icon.png" alt="" width="28" height="28">Reference Manager</a>
+  <a class="button small" href="./#download">Download 0.7.10</a>
+</header>
+
+<main class="prose">
+  <h1>What's new</h1>
+  <p class="meta">Version 0.7.10 is the current one.</p>
+<h2 id="0-7-10">0.7.10</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>None in this version.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>Search: a quoted phrase with a colon in it (&quot;BERT: Pre-training…&quot;) is searched for, instead of being read as a filter and finding nothing.
+</li>
+<li>Search: a range that ends before it starts (<code>year:2023..2019</code>, <code>date:2019-03</code>) now says so, instead of quietly finding nothing.
+</li>
+<li>Formatted references: no full stop or comma after a title ending in ? or ! (&quot;need? Journal&quot;, not &quot;need?. Journal&quot;), and &quot;Why? A study&quot; instead of &quot;Why?: A study&quot;.
+</li>
+<li>Formatted references, CSL-JSON and RIS: a DOI typed as a link (<code>https://doi.org/10.…</code>) is no longer printed twice.
+</li>
+<li>Formatted references: names print as typed (&quot;d'Alembert&quot;, not &quot;d' Alembert&quot;; &quot;van Gogh, V.&quot;, not &quot;Gogh, V. van&quot;).
+</li>
+<li>A name copied from a PDF with its accent stored apart no longer creates a second copy of the same person. .bib files get the accents joined up, which pdfLaTeX needs.
+</li>
+<li>People list: each reference counts once, however many projects changed its author list.
+</li>
+<li>Notes saved as Markdown: a line of <code>=</code> under a comment no longer makes it a heading, an indented line no longer turns into code, the title is escaped, and a picture whose note ends in <code>\</code> still shows.
+</li>
+<li>A project's timeline export: a note on a paper since linked to a reference outside the project stays with the project's reference.
+</li>
+<li>Colour groups: Duplicate works for names close to the 60-character limit.
+</li>
+<li>Pasting a very long BibTeX text is much faster.
+</li></ul>
+<h2 id="0-7-9">0.7.9</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>None in this version.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>A reference form left open in a background tab no longer freezes the whole window. Links inside the form (a person, a venue, a note, a citing paper) open their tab behind it, and the tab shortcuts wait while a form or dialog is open.
+</li>
+<li>On a Mac the tab shortcuts are ⌘T, ⌘W and ⌘1–9 only, because Ctrl+T swaps two letters in a text box there.
+</li>
+<li>Keys: a key typed with Set key… while linked files were being written is no longer overwritten.
+</li>
+<li>Keys: copying or saving one group's file from Export &amp; sync records (and with locked keys pins) only the keys in that file, and only when the copy worked.
+</li>
+<li>Keys: &quot;Use the new keys&quot; no longer marks a project that was never written out as written.
+</li>
+<li>Templates: a Templates page opened before an abbreviation tag or a kind of venue was deleted no longer saves it back.
+</li>
+<li>Templates: the sidebar's Templates link no longer throws away unsaved edits.
+</li>
+<li>.bib files:
+<ul>
+<li>A month stored on its own uses the template's month style (<code>jun</code>, June).
+</li>
+<li>In BibLaTeX, the subtitle is protected like the title.
+</li>
+<li>Field order and omit lists naming year or school also work for BibLaTeX's date and institution.
+</li>
+<li>The <code>[key]</code> token writes Müller as Muller, not Mller.
+</li></ul>
+</li>
+<li>No &quot;its typed key is used&quot; warning for a reference whose key is pinned.
+</li>
+<li>A project's formatted references follow the order you arranged them in.
+</li>
+<li>Export &amp; sync opens on the project's own file, so the warnings button shows that file's warnings.
+</li>
+<li>Check document's &quot;Select them in the project&quot; shows every reference, so every tick counts.
+</li>
+<li>Add to project counts only the references that weren't in the project already.
+</li></ul>
+<h2 id="0-7-8">0.7.8</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>None in this version.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>Closing a tab or window keeps what you were typing: notes on people and venues, a paper's details, notes on a page, text on a board.
+</li>
+<li>Ctrl+Enter in the reference form adds a name you're still typing instead of dropping it, and no longer picks a suggestion as well.
+</li>
+<li>Reference form:
+<ul>
+<li>Asks before Reset, Push to master, or opening a PDF or project would drop your other changes.
+</li>
+<li>A new reference's form starts empty.
+</li>
+<li>A second pasted BibTeX text shows its own form.
+</li>
+<li>Saving to one project only no longer turns an old date into the project's own.
+</li></ul>
+</li>
+<li>Dates: a year before Christ (<code>-0044</code>) is left as typed; years below 1000 keep four digits (0800-03).
+</li>
+<li>Paper viewer:
+<ul>
+<li>A reference opened after starting &quot;Type its reference&quot; no longer gets linked to the paper.
+</li>
+<li>Page notes and the Notes panel no longer undo each other's changes, and quick changes in Details no longer undo each other.
+</li>
+<li>Find works on pages you've scrolled away from.
+</li>
+<li>A reopened paper shows the right page number.
+</li>
+<li>Numbered citations lead to the right reference.
+</li>
+<li>Pinch zoom follows your fingers instead of jumping.
+</li></ul>
+</li>
+<li>Papers dragged onto a category are put in it.
+</li>
+<li>The citation graph keeps its view when you come back to its tab.
+</li>
+<li>Projects: the selection count and Remove ignore references hidden by a group or filter.
+</li>
+<li>People and venues:
+<ul>
+<li>A merge starts afresh for each pair, and Cancel keeps the selection.
+</li>
+<li>A right click no longer opens a link.
+</li>
+<li>Typing in one abbreviation survives adding another.
+</li></ul>
+</li>
+<li>Settings keeps the key pattern you're editing when another setting is saved.
+</li>
+<li>Templates:
+<ul>
+<li>Built-in templates can no longer be reordered by dragging.
+</li>
+<li>Duplicate asks about unsaved changes.
+</li>
+<li>Emptying a text chip no longer deletes it.
+</li></ul>
+</li>
+<li>Boards: a group only goes into a larger one (no more refused saves), and a board reopens where you left it.
+</li>
+<li>Notes: an undo during a save no longer leaves the note unsaved, and a project's notes keep their own open folders.
+</li>
+<li>Timeline: the shading stays with the days, months and years as you move along.
+</li></ul>
+<h2 id="0-7-7">0.7.7</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>None in this version.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>Security: a web page in a browser tab could load the app in a frame and, on Windows, use the app's commands. Both are now refused.
+</li>
+<li>Security: a <code>javascript:</code> link in formatted references no longer runs. Links there and in the timeline export open as web links instead of taking over the window.
+</li>
+<li>Web pages can no longer press the app's keys.
+</li>
+<li>Windows:
+<ul>
+<li>A tab dragged to another window no longer opens in every window.
+</li>
+<li>Windows fit small or scaled screens and open on the screen you dropped a tab on.
+</li></ul>
+</li>
+<li>On a Mac, Quit (⌘Q) saves what you were typing, as closing a window does, and Option+←/→ moves by a word again.
+</li>
+<li>The copies made before an update are kept by date, so the newest is no longer deleted.
+</li>
+<li>Browser tabs:
+<ul>
+<li>Get the PDF stops waiting after half a minute.
+</li>
+<li>A PDF downloaded for a deleted reference still arrives.
+</li>
+<li>Add this PDF works again after a failed download.
+</li>
+<li>A tab remembers its reference.
+</li></ul>
+</li>
+<li>Footnotes in notes lead to their note instead of an error.
+</li></ul>
+<h2 id="0-7-6">0.7.6</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>None in this version.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>A backup saved over the library's own file could delete the library. That's refused now.
+</li>
+<li>A restore that partly worked was reported as failed, and could lose the copy of the previous library.
+</li>
+<li>Writing linked files:
+<ul>
+<li>No longer overwrites an edit made outside the app at the same moment.
+</li>
+<li>Keeps the file's permissions on a Mac.
+</li>
+<li>No longer replaces a shortcut (symlink) with a plain file.
+</li></ul>
+</li>
+<li>Watched folders:
+<ul>
+<li>PDFs in a folder that couldn't be read are no longer forgotten.
+</li>
+<li>Half-downloaded files wait until they're complete.
+</li>
+<li>A failed import is tried again.
+</li></ul>
+</li>
+<li>Adding a PDF again brings back its stored file if it went missing.
+</li>
+<li>Search in papers: letters like ı, ø, ł, ß and æ now match, and results are no longer cut off for big libraries.
+</li>
+<li>Relinking a paper to another reference updates its citation matches.
+</li>
+<li>Notes:
+<ul>
+<li>Citations written as <code>@{key}</code> are linked.
+</li>
+<li>Saving notes as files gives a usable name to one Windows reserves (like Aux).
+</li></ul>
+</li>
+<li>A new project no longer inherits a deleted project's timeline. A deleted abbreviation tag or kind of venue is taken out of templates.
+</li>
+<li>Merging people or venues no longer leaves project copies identical to the library's.
+</li></ul>
+<h2 id="0-7-5">0.7.5</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>None in this version.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>.bib files:
+<ul>
+<li>A part of a book with its own title is an @incollection in BibTeX, instead of losing the book's title.
+</li>
+<li>Initials like J.A. stay J.A. (not J.).
+</li>
+<li>A month kept beside a year-only date is no longer dropped.
+</li>
+<li>An impossible date (30 February) keeps its year and month.
+</li>
+<li>Accents copied from PDFs are turned into LaTeX properly.
+</li>
+<li>BibLaTeX kinds of thesis or report (candthesis) are written in words for BibTeX.
+</li>
+<li>A particle ending in an apostrophe gets no space (d'Alembert).
+</li>
+<li>Line breaks inside a value follow the template's line endings.
+</li></ul>
+</li>
+<li>Renaming keys in .tex files stops if an <code>\input</code> can't be read, instead of skipping that file.
+</li></ul>
+<h2 id="0-7-4">0.7.4</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>Dates can be typed as people write them: &quot;9 March 2025&quot;, &quot;mar 2025&quot;, &quot;Sept. 9th, 2025&quot;. Months are suggested as you type, and the date is saved as 2025-03-09. All-number dates like 9/3/2025 are left as typed, since day and month could be either way round.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>None in this version.
+</li></ul>
+<h2 id="0-7-3">0.7.3</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>Colour groups: the colours chosen in the notes panel also hide the other highlights on the page. While the panel is closed, a bar says what's shown, with Show all.
+</li>
+<li>cola keys: no year after +N (SharkeyCBLW+24).
+</li>
+<li>README.md and features.md are up to date.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>Going from one project to another in the same tab kept the first project's ticks, and Remove could then take references out of it.
+</li>
+<li>Text typed just before closing a window was lost.
+</li>
+<li>Changing a board's settings could bring back, and save, an older version of the board.
+</li>
+<li>Changing a linked file's format wrote the new format into the old file.
+</li>
+<li>Deleting a template that a project's extra file used quietly changed that file. It's now refused.
+</li>
+<li>Set key… could quietly re-key another reference.
+</li>
+<li>Names written like <code>Mu\~{n}oz</code> were split apart.
+</li>
+<li>Pasting a name with a short family name (Li, Wu) could create a duplicate person.
+</li>
+<li>Smaller fixes in search, tags, the timeline and notes.
+</li></ul>
+<h2 id="0-7-2">0.7.2</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>Colour groups: give highlight colours a meaning (&quot;Key claim&quot; for yellow) for every paper in Settings, for a project, or for one paper. The notes panel shows notes by those meanings.
+</li>
+<li>The library format changes (to 7). Updating from an earlier version saves a copy of your library in <code>backups\</code> first.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>None in this version.
+</li></ul>
+<h2 id="0-7-1">0.7.1</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>Papers are named by the title printed in them instead of their file name.
+</li>
+<li>The library as a .zip: save everything (database, PDFs, pictures) and restore it, from Settings → Your data.
+</li>
+<li>cola keys write the initials of up to four more authors, then +N.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li>Citation cards find the reference lists of many more papers.
+</li>
+<li>Hover cards show reliably, and clicking a citation goes to its reference.
+</li>
+<li>Going back no longer leaves a blue box over the page.
+</li>
+<li>Cancel on a reference and Stop in a pasted-BibTeX review ask before throwing changes away.
+</li>
+<li>Ctrl+Shift+W closes the window, not the tab, and Light or Dark reaches every open window.
+</li></ul>
+<h2 id="known-issues">Known issues</h2>
+<ul>
+<li>LaTeX maths in a title (<code>$\alpha$-Synuclein</code>) shows without the symbol in the library table and in formatted references.
+</li>
+<li>If the same board is edited in two windows at the same moment, the last save wins for an item changed in both.
+</li></ul>
+
+</main>
+
+<footer>
+  <p>© 2026 Thomas Chambers. Free to use, under this <a href="licence.html">licence</a>.</p>
+</footer>
+
+</body>
+</html>

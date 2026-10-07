@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reference Manager</title>
+<meta name="description" content="A local, offline reference manager for Windows and macOS: one master library typed by you, clean .bib files for every project, and your PDF papers read and annotated beside them.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img class="logo" src="icon.png" alt="" width="80" height="80">
+  <h1>Reference Manager</h1>
+  <p class="tagline">A local, offline reference manager. One master library you type yourself, clean <code>.bib</code> files for every project, and your papers read and annotated beside them.</p>
+  <div class="downloads" id="download">
+    <a class="button" id="windows" href="https://github.com/ThomasChambers15243/Reference-Manager/releases/download/v0.7.10/Reference-Manager_0.7.10_x64-setup.exe">Download for Windows<small>Reference-Manager_0.7.10_x64-setup.exe</small></a>
+    <a class="button" id="mac" href="https://github.com/ThomasChambers15243/Reference-Manager/releases/download/v0.7.10/Reference-Manager_0.7.10_macOS.dmg">Download for Mac<small>Reference-Manager_0.7.10_macOS.dmg</small></a>
+  </div>
+  <p class="meta">Version 0.7.10 · <a href="whats-new.html#0-7-10">What's new</a> · <a href="https://github.com/ThomasChambers15243/Reference-Manager/releases">Every version</a></p>
+</header>
+
+<main>
+  <section>
+    <h2>What it does</h2>
+    <ul class="features">
+      <li><strong>One library, typed by you.</strong> Every reference is stored once, with title autocomplete, pasted BibTeX that you check before saving, duplicate checks, and a search with filters.</li>
+      <li><strong>People and venues.</strong> Each stored once, with a page of its own. Venues keep the abbreviations that templates choose by tag.</li>
+      <li><strong>Projects.</strong> References in nested groups, changes kept in one project or saved to the master, citation keys that never change behind your back, and a check of your LaTeX document.</li>
+      <li><strong>Export.</strong> <code>.bib</code> files laid out by templates and kept up to date automatically, plus CSL-JSON, RIS, Typst YAML and formatted reference lists in 79 citation styles.</li>
+      <li><strong>Papers.</strong> PDFs added by dropping them in or from watched folders, named by the titles printed in them, read and annotated in the app, with citation cards and a citation graph.</li>
+      <li><strong>And more.</strong> Markdown notes that cite your references, sketch boards, a timeline of what you did when, and a browser tab for finding papers on the web.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Your data stays yours</h2>
+    <p>Everything is kept in one folder on your computer: a database, the PDFs and the pictures of marked areas. The app fetches nothing from the internet by itself; web pages load only in the browser tabs you open. The whole library can be saved as one <code>.zip</code> and restored on the same computer or another.</p>
+  </section>
+
+  <section>
+    <h2>Installing</h2>
+    <h3>Windows</h3>
+    <p>Run the installer (64-bit Windows 10 or 11). It is not code-signed, so SmartScreen may say "Windows protected your PC": click <em>More info</em>, then <em>Run anyway</em>. To update, run the newer installer over the old version.</p>
+    <h3>Mac</h3>
+    <p>Open the <code>.dmg</code> and drag Reference Manager into Applications. It runs on Apple silicon and Intel Macs with macOS 11 or later. It is not signed with an Apple developer certificate, so macOS refuses it the first time: try to open it once, then click <em>Open Anyway</em> in System Settings → Privacy &amp; Security (on macOS 14 or earlier, Control-click the app and choose <em>Open</em>). If macOS says the app "is damaged", run <code>xattr -dr com.apple.quarantine "/Applications/Reference Manager.app"</code> in Terminal and open it again. To update, quit the app and drag the new version into Applications.</p>
+    <p>Updating never touches your library, papers or settings.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Thomas Chambers. Free to use, under this <a href="licence.html">licence</a>. The source code is not published.</p>
+  <p>Questions or problems: <a href="https://github.com/ThomasChambers15243/Reference-Manager/issues">open an issue</a>.</p>
+</footer>
+
+<script>
+  // The visitor's own system gets the filled-in button; without this, both look alike.
+  var mac = /Mac/.test(navigator.platform) || /Macintosh/.test(navigator.userAgent);
+  document.getElementById(mac ? "mac" : "windows").classList.add("primary");
+</script>
+</body>
+</html>
