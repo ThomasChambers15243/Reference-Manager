@@ -15,10 +15,10 @@
   <h1>Reference Manager</h1>
   <p class="tagline">A local, offline reference manager. One master library you type yourself, clean <code>.bib</code> files for every project, and your papers read and annotated beside them.</p>
   <div class="downloads" id="download">
-    <a class="button" id="windows" href="https://github.com/ThomasChambers15243/Reference-Manager/releases/download/v0.7.10/Reference-Manager_0.7.10_x64-setup.exe">Download for Windows<small>Reference-Manager_0.7.10_x64-setup.exe</small></a>
-    <a class="button" id="mac" href="https://github.com/ThomasChambers15243/Reference-Manager/releases/download/v0.7.10/Reference-Manager_0.7.10_macOS.dmg">Download for Mac<small>Reference-Manager_0.7.10_macOS.dmg</small></a>
+    <a class="button" id="windows" href="https://github.com/ThomasChambers15243/Reference-Manager/releases/download/v0.7.11/Reference-Manager_0.7.11_x64-setup.exe">Download for Windows<small>Reference-Manager_0.7.11_x64-setup.exe</small></a>
+    <a class="button" id="mac" href="https://github.com/ThomasChambers15243/Reference-Manager/releases/download/v0.7.11/Reference-Manager_0.7.11_macOS.dmg">Download for Mac<small>Reference-Manager_0.7.11_macOS.dmg</small></a>
   </div>
-  <p class="meta">Version 0.7.10 · <a href="whats-new.html#0-7-10">What's new</a> · <a href="https://github.com/ThomasChambers15243/Reference-Manager/releases">Every version</a></p>
+  <p class="meta">Version 0.7.11 · <time datetime="2026-10-07">7 October 2026</time> · <a href="whats-new.html#0-7-11">What's new</a> · <a href="https://github.com/ThomasChambers15243/Reference-Manager/releases">Every version</a></p>
 </header>
 
 <main>
@@ -26,7 +26,8 @@
     <h2>What it does</h2>
     <ul class="features">
       <li><strong>One library, typed by you.</strong> Every reference is stored once, with title autocomplete, pasted BibTeX that you check before saving, duplicate checks, and a search with filters.</li>
-      <li><strong>People and venues.</strong> Each stored once, with a page of its own. Venues keep the abbreviations that templates choose by tag.</li>
+      <li><strong>People and venues.</strong> Each stored once, with a page of its own. Venues, arXiv among them, keep the abbreviations that templates choose by tag.</li>
+      <li><strong>Categories and tags.</strong> References, papers, people and venues each have their own, organised the same way: drag things onto them, and drag categories inside one another and tags into order.</li>
       <li><strong>Projects.</strong> References in nested groups, changes kept in one project or saved to the master, citation keys that never change behind your back, and a check of your LaTeX document.</li>
       <li><strong>Export.</strong> <code>.bib</code> files laid out by templates and kept up to date automatically, plus CSL-JSON, RIS, Typst YAML and formatted reference lists in 79 citation styles.</li>
       <li><strong>Papers.</strong> PDFs added by dropping them in or from watched folders, named by the titles printed in them, read and annotated in the app, with citation cards and a citation graph.</li>
@@ -36,16 +37,18 @@
 
   <section>
     <h2>Your data stays yours</h2>
-    <p>Everything is kept in one folder on your computer: a database, the PDFs and the pictures of marked areas. The app fetches nothing from the internet by itself; web pages load only in the browser tabs you open. The whole library can be saved as one <code>.zip</code> and restored on the same computer or another.</p>
+    <p>Everything is kept in one folder on your computer: a database, the PDFs and the pictures of marked areas. By itself, the app only asks this website whether a new version is out, which you can turn off; web pages load only in the browser tabs you open. The whole library can be saved as one <code>.zip</code> and restored on the same computer or another.</p>
   </section>
 
   <section>
     <h2>Installing</h2>
     <h3>Windows</h3>
-    <p>Run the installer (64-bit Windows 10 or 11). It is not code-signed, so SmartScreen may say "Windows protected your PC": click <em>More info</em>, then <em>Run anyway</em>. To update, run the newer installer over the old version.</p>
+    <p>Run the installer (64-bit Windows 10 or 11). It is not code-signed, so SmartScreen may say "Windows protected your PC": click <em>More info</em>, then <em>Run anyway</em>.</p>
     <h3>Mac</h3>
-    <p>Open the <code>.dmg</code> and drag Reference Manager into Applications. It runs on Apple silicon and Intel Macs with macOS 11 or later. It is not signed with an Apple developer certificate, so macOS refuses it the first time: try to open it once, then click <em>Open Anyway</em> in System Settings → Privacy &amp; Security (on macOS 14 or earlier, Control-click the app and choose <em>Open</em>). If macOS says the app "is damaged", run <code>xattr -dr com.apple.quarantine "/Applications/Reference Manager.app"</code> in Terminal and open it again. To update, quit the app and drag the new version into Applications.</p>
-    <p>Updating never touches your library, papers or settings.</p>
+    <p>Open the <code>.dmg</code> and drag Reference Manager into Applications. It runs on Apple silicon and Intel Macs with macOS 11 or later. It is not signed with an Apple developer certificate, so macOS refuses it the first time: try to open it once, then click <em>Open Anyway</em> in System Settings → Privacy &amp; Security (on macOS 14 or earlier, Control-click the app and choose <em>Open</em>). If macOS says the app "is damaged", run <code>xattr -dr com.apple.quarantine "/Applications/Reference Manager.app"</code> in Terminal and open it again.</p>
+    <h3>Updating</h3>
+    <p>When a new version is out, the app says so a few seconds after it starts, and <em>Update and restart</em> in Settings → Updates installs it: on Windows the app closes, shows a progress bar for a few seconds and opens again; on a Mac the new version takes the old one's place in Applications and opens. Updating never touches your library, papers or settings.</p>
+    <p>Versions before 0.7.11 don't look for new versions on this website. Update one of those by hand once: on Windows, run the new installer; on a Mac, quit the app and drag the new version into Applications, replacing the old one.</p>
   </section>
 </main>
 

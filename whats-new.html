@@ -12,12 +12,33 @@
 
 <header class="bar">
   <a class="home" href="./"><img src="icon.png" alt="" width="28" height="28">Reference Manager</a>
-  <a class="button small" href="./#download">Download 0.7.10</a>
+  <a class="button small" href="./#download">Download 0.7.11</a>
 </header>
 
 <main class="prose">
   <h1>What's new</h1>
-  <p class="meta">Version 0.7.10 is the current one.</p>
+  <p class="meta">Version 0.7.11 is the current one · <time datetime="2026-10-07">7 October 2026</time>.</p>
+<h2 id="0-7-11">0.7.11</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>Updates on a Mac, like on Windows: a few seconds after it starts, the app says when a new version is out, and <em>Update and restart</em> installs it. The new version takes the old one's place in Applications and opens. Copies older than 0.7.11 are updated by hand once.
+</li>
+<li>New versions come from the website, on Windows and on a Mac: the app asks it when it starts (Settings → Updates can turn that off), downloads the new version and checks it against the size and checksum the website gives before installing it. Versions built on the same computer are still found in their folder.
+</li>
+<li>Settings has a contents list on the left. Click a section to go to it; the one you're reading is marked as you scroll. The list scrolls by itself when the window is short, and hides when it is narrow.
+</li>
+<li>arXiv is a kind of venue: <em>Eprint archive</em>, which a reference's eprint type (<code>archivePrefix</code> in BibTeX) draws on. A preprint shows arXiv as its venue in the library, <code>venue:arxiv</code> finds it, and arXiv has a page like any journal. Eprint types already typed in become venues of that kind.
+</li>
+<li>References have categories and tags of their own, in a sidebar beside the library table, with <em>Not organised yet</em>.
+</li>
+<li>References, papers, people and venues are organised the same way. Drag one, or every one ticked, onto a category or tag. Drag a category onto another to put it inside, onto the line above one to move it there, or out to the top level. Drag a tag up or down the list to reorder it. <em>Add to category</em> and <em>Tag</em> work on the ticked ones everywhere, and <em>Remove from category</em> or <em>Remove the tag</em> takes them out of the one shown. These actions float in a bar at the foot of the list, so ticking the first one no longer moves the list.
+</li>
+<li>The library format changes (to 8). Updating from an earlier version saves a copy of your library in <code>backups\</code> first.
+</li></ul>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ul>
+<li><em>Install from a file…</em> takes installers named as the website names them (<code>Reference-Manager_0.7.11_x64-setup.exe</code>) and, on a Mac, a <code>.dmg</code>.
+</li></ul>
 <h2 id="0-7-10">0.7.10</h2>
 <h3 id="features">Features</h3>
 <ul>
