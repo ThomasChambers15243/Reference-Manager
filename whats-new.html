@@ -26,7 +26,54 @@
 
     <main id="main" class="releases">
       <h1>Releases</h1>
-      <p class="release-meta">Latest release <strong>0.7.13</strong> <time datetime="2026-10-08">8 October 2026</time> · <a href="./#download">Download</a> · <a href="https://github.com/ThomasChambers15243/Reference-Manager/releases">Every version on GitHub</a></p>
+      <p class="release-meta">Latest release <strong>0.7.14</strong> <time datetime="2026-10-08">8 October 2026</time> · <a href="./#download">Download</a> · <a href="https://github.com/ThomasChambers15243/Reference-Manager/releases">Every version on GitHub</a></p>
+<section class="release" id="0-7-14">
+<h2>0.7.14</h2>
+<div class="release-parts">
+<div>
+<h3>Features</h3>
+<ul>
+<li>Moving from another reference manager: export your references from Zotero, Mendeley, JabRef, Paperpile or Overleaf as a <code>.bib</code> file and import it on the <em>Works packages</em> page (or drop it on the window). It becomes a project, as a works package does: the references keep their keys, the PDFs their <code>file</code> fields name come with them, keywords become tags, and JabRef's and Mendeley's groups become the project's groups and categories. Nothing goes into your library until you have checked it. An empty library offers it too.
+</li>
+<li>Checking a package's references is easier. A name or a venue that came with the package and is not in your library yet is marked <em>new</em>, with the people or venues of yours it may be (&quot;Smith, J.&quot; may be your &quot;Smith, John&quot;, &quot;IEEE Trans. Inf. Theory&quot; your &quot;IEEE Transactions on Information Theory&quot;), one click from using yours. A PDF whose printed title differs from the reference's is pointed out.
+</li>
+<li>When you start checking a package's references, a note in the corner says what to look out for. <em>Don't show this again</em> turns it off, and Settings → <em>Works packages</em> turns it back on.
+</li>
+<li>A reference that is not checked yet is marked so in the <code>.bib</code> files written from its project, with a <code>%</code> line above it, and the export says how many there are. In the project it is marked <em>not checked yet</em>.
+</li>
+<li><em>From a paper…</em> in a note opens with Ctrl+Shift+P (⌘⇧P on a Mac).
+</li>
+<li>Search lists take the arrow keys and Enter: the papers in <em>From a paper…</em>, <em>Add from library</em>, choosing a paper's reference, the notes in <em>To a note…</em> and the notes search. In <em>From a paper…</em>, Ctrl+Enter adds what is ticked.
+</li>
+<li>Writing a note in Markdown is quicker, as in a code editor. Ctrl+B, Ctrl+I, Ctrl+Shift+X and Ctrl+E make the selection, or the word at the caret, bold, italic, struck through or code, and take it off again. Ctrl+K makes it a link, and so does a web address pasted over it. Ctrl+Shift+8, Ctrl+Shift+7 and Ctrl+Shift+9 make the lines a list, a numbered list or a task list, and Ctrl+' a quote. Alt+Up and Alt+Down move the lines, with Shift they copy them, and Ctrl+Shift+K deletes them, a numbered list staying numbered in order. A bracket, a quote mark or a mark such as <code>*</code>, <code>_</code> or <code>~</code> typed over a selection goes round it instead of replacing it. Enter on a list item starts the next one, numbered on (an empty one ends the list), and Tab and Shift+Tab move it in and out. A paper's notes written in Markdown take the same keys. Ctrl+Z takes back each change, and a citation put in with @ or <em>Cite…</em>, or what <em>From a paper…</em> brings in, too. The write, read and side-by-side views can be given keys. On a Mac, ⌘ does what Ctrl does.
+</li>
+<li>Keys for reading a paper. V, H, U, N, B, E and F choose a tool (select, highlight, underline, note, box, ellipse, freehand), and 1 to 8 a colour of the paper's colour group, as its colour button shows. Alt+Down and Alt+Up go to the next and the previous note, marking it on the page and in the Notes panel without opening it, and O opens it. Back returns to where you were before, once for all the notes gone through. Going to a page, turning to the next or the previous one (two pages side by side turn together), fitting the page and showing the panels have commands too, without keys until you give them some.
+</li>
+<li>Keys for moving around the app, off unless you turn them on in Settings → <em>Keyboard shortcuts</em>: Alt+L for the library, Alt+P for papers, Alt+N for notes and one for each other page, Ctrl+, for Settings, Alt+B to narrow or widen the sidebar and Ctrl+Shift+F for the page's search box. While they are on, the sidebar names them. On a Mac they are ⌥ and ⌘ keys, and the ⌥ ones wait while you type, since ⌥ types letters there.
+</li>
+<li>Every keyboard shortcut can be changed in Settings → <em>Keyboard shortcuts</em>, where the commands are grouped by where they work (writing notes, reading a paper, tabs and windows, anywhere, moving around the app, sketch boards, the timeline, web pages) and found by what they do or by their key. Click a key and press the new one. A command can have several keys, or none, and a key another command has is refused, with that command's name. Buttons and hints show the keys chosen. Duplicating a tab, moving it to a new window and closing the other tabs can be given keys too, and so can <em>New note</em> and <em>New reference</em>, which then work on any page. Alt+Left and Alt+Right no longer go back and forward while you type in a text box, as on a Mac already.
+</li>
+<li>Ctrl+/ (⌘/ on a Mac) lists the keys of the page you are on, from the same list as Settings, with a link there to change them.
+</li>
+<li>The app's keys work while a web page in a tab has the keyboard, as chosen in Settings: every key for tabs and windows, and the keys for moving around when they are on. Ctrl+L goes to the address bar from the page and from the bar above it.
+</li>
+<li>Settings → <em>Web links</em> chooses the site a browser tab opens on and searches, and that a citation is looked up on: Google Scholar, OpenAlex or Semantic Scholar.
+</li>
+<li>The window's title shows the version (Reference Manager 0.7.14).
+</li>
+<li>The installer shows the app's icon, and makes Windows show the new icon on the taskbar and the desktop: it kept the old one in its cache.
+</li></ul>
+</div>
+<div>
+<h3>Bug fixes</h3>
+<ul>
+<li>When one setting could not be read (one a newer version saved another way, say), every setting went back to its default. Now only that one does.
+</li>
+<li>Text taken from a PDF ran the words at the end of one line and the start of the next together (&quot;end ofthe line&quot;) in a highlight's quote, and so in what was copied or brought into a note. Lines are now joined with a space, and a word a hyphen breaks at a line's end is joined again. Copying from a PDF with Ctrl+C gives the same text.
+</li></ul>
+</div>
+</div>
+</section>
 <section class="release" id="0-7-13">
 <h2>0.7.13</h2>
 <div class="release-parts">
