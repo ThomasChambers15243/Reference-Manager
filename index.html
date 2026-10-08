@@ -7,7 +7,7 @@
   <meta name="description" content="A local, offline reference manager for Windows and Mac: one library you check yourself, clean .bib files for every project, and your papers read and annotated beside them.">
   <meta name="theme-color" content="#f7f6f0">
   <link rel="icon" type="image/svg+xml" href="logo.svg?v=1eb894194f">
-  <link rel="stylesheet" href="style.css?v=72476287f9">
+  <link rel="stylesheet" href="style.css?v=173a2dcd7f">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -50,6 +50,10 @@
         <div class="section-intro">
           <h2 id="features-title">From your first paper<br>to the final bibliography.</h2>
           <p>References, projects and PDFs belong together. Keep them in one place, with the details under your control.</p>
+          <div class="built">
+            <h3>How it’s built</h3>
+            <p><strong>Mostly in Rust.</strong> A Rust core holds your library and does the work: the SQLite database, BibTeX, templates, keys, search, backups and the citation styles, with hayagriva from the Typst project. Tauri makes it a small desktop app for Windows and Mac, with a React and TypeScript interface and pdf.js for reading papers.</p>
+          </div>
         </div>
         <div class="feature-list">
           <article>
