@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title desc">
+  <title id="title">Reference Manager — page and bookmark</title>
+  <desc id="desc">A folded page with a bookmark cut out of its centre. Forest-green vector mark on a transparent background.</desc>
+  <g fill="#254D3D">
+    <path d="M202 48c10 0 18 8 18 18v298c0 6-2 11-6 15l-96 79c-5 4-11 6-18 6H80c-9 0-16-7-16-16V188c0-7 3-13 8-18L190 54c3-4 7-6 12-6Z"/>
+    <path d="M256 48h174c10 0 18 8 18 18v382c0 9-7 16-16 16h-18c-6 0-11-2-15-6L256 316c-9-9-9-20 0-29l28-25c7-7 16-7 24 0l28 28V104c0-13-11-24-24-24h-56c-7 0-12-5-12-12v-8c0-7 5-12 12-12Z"/>
+  </g>
+</svg>
