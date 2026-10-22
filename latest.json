@@ -1,17 +1,17 @@
 {
-  "version": "0.7.17",
-  "pub_date": "2026-10-15T12:40:46.000Z",
-  "notes": "https://thomaschambers15243.github.io/Gallowmay/whats-new.html#0-7-17",
+  "version": "0.8.0",
+  "pub_date": "2026-10-22T08:45:56.000Z",
+  "notes": "https://thomaschambers15243.github.io/Gallowmay/whats-new.html#0-8-0",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/ThomasChambers15243/Gallowmay/releases/download/v0.7.17/Reference-Manager_0.7.17_x64-setup.exe",
-      "size": 9137961,
-      "sha256": "b4b0f33708b9f793459eb9d96530f18a8f48a06c362eb78f6c920ab08787d074"
+      "url": "https://github.com/ThomasChambers15243/Gallowmay/releases/download/v0.8.0/Reference-Manager_0.8.0_x64-setup.exe",
+      "size": 11401403,
+      "sha256": "45afcbc40c4fd68e4117ba2851f91ff7774239124d85aaf735e68df6b9bec68a"
     },
     "darwin-universal": {
-      "url": "https://github.com/ThomasChambers15243/Gallowmay/releases/download/v0.7.17/Reference-Manager_0.7.17_macOS.dmg",
-      "size": 25408275,
-      "sha256": "e2b7d8ef7287af495e3a9ea388e20fcc6e967d3a4f6225afa12ec2b0c716b5bf"
+      "url": "https://github.com/ThomasChambers15243/Gallowmay/releases/download/v0.8.0/Reference-Manager_0.8.0_macOS.dmg",
+      "size": 31558266,
+      "sha256": "a3ee853a64ab9541ccee8769ff574b489d2bc5c0118bca35f93a7b2e5c47b451"
     }
   }
 }
